@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="firefox(failed)">
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="com.Product.ROSA.TrackOrderTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="connectToDataBase"/>
+          <include name="closeBrowser"/>
+          <include name="logoutFromApp"/>
+          <include name="trackOrderTest"/>
+          <include name="disconnectDataBase"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- com.Product.ROSA.TrackOrderTest -->
+      <class name="com.Product.ROSA.AddProductToCartTestAndBuyTest">
+        <methods>
+          <include name="connectToDataBase"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="logoutFromApp"/>
+          <include name="addProductToCartTest"/>
+          <include name="loginToApp"/>
+          <include name="disconnectDataBase"/>
+        </methods>
+      </class> <!-- com.Product.ROSA.AddProductToCartTestAndBuyTest -->
+    </classes>
+  </test> <!-- firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->

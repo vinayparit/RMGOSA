@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Suite">
+  <test  name="Test Runner-1">
+    <classes>
+      <class name="com.Test.ROSA.Practice"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="Test Runner-2">
+    <classes>
+      
+      <class name="com.Test.ROSA.Sample"/>
+     
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="Test Runner-3">
+    <classes>
+     
+      <class name="com.Test.ROSA.Demo1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
